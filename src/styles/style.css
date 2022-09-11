@@ -1,0 +1,67 @@
+.map-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .primary-button {
+    width: 155px;
+    height: 45px;
+    background: #9A2EEF;
+    color:white;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .primary-button:hover {
+    background: #7009be;
+  }
+  
+  .secondary-button {
+    width: 155px;
+    height: 45px;
+    background: #2EC1EF;
+    color:white;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .secondary-button:hover {
+    background: #0d8db4;;
+  }
+  
+  .recent-locations {
+      font-style: normal;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      list-style-type: none;
+      color: #FFFFFF;
+      margin: auto;
+      width: 35%;
+      padding-inline-start: 0px;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  
+  .recent-locations-item:hover {
+    background-color: rgba(129, 128, 128, 0.7);
+    transition: linear .2s;
+  }
+  
+  
+  .recent-locations-item {
+    padding: 20px;
+  }
