@@ -35,8 +35,10 @@ function Map() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
         const home = {lat: position.coords.latitude, lng: position.coords.longitude }
-        setLocation(home);
-        setMostRecentLocations([...mostRecentLocations, home]);
+        if(home.lat != location.lat && home.lng != location.lng) {
+          setLocation(home);
+          setMostRecentLocations([...mostRecentLocations, home]);
+        }
       })
     } 
   }
